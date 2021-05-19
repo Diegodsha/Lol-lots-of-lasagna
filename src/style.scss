@@ -1,13 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,200&display=swap');
+
 body {
-  //   background-color: beige;
-  background-image: url('https://sanremo.imgix.net/2017/05/San-Remo-Top-Ten-JAB_7739-1498x1000.jpg?auto=format&w=2000');
+  background-image: url('./assets/backlasagna.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-#content {
-  background-image: url('./assets/bkcode6.jpg');
-  //   position: absolute;
+.lasagna {
+  font-family: 'Nunito', sans-serif;
+}
+
+.lobster {
+  font-family: 'Lobster', sans-serif;
+}
+
+nav {
+  @extend.lasagna;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  .fa-heart {
+    color: #ff0000;
+    animation-name: rainbow-heart;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rainbow-heart {
+    0% {
+      color: rgb(224, 6, 6);
+    }
+    40% {
+      color: rgb(250, 178, 9);
+    }
+    70% {
+      color: rgb(66, 224, 8);
+    }
+    100% {
+      color: rgb(224, 6, 6);
+    }
+  }
+}
+.select-tab {
+  color: white;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 168, 37, 0.948);
+}
+
+.lol {
+  font-size: 60px;
+  text-shadow: 4px 1px 3px black;
+}
+
+#home {
+  width: 60%;
+}
+
+.home-cont {
+  @extend.lasagna;
+  // height: 75vh;
+  // width: 90vh;
+  background-color: rgba(255, 255, 255, 0.86);
+  border-radius: 1rem;
+}
+
+.foot-cont {
+  @extend.lasagna;
+  background-color: rgba(239, 168, 37, 0.948);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 3rem;
+}
+
+hr {
+  height: 3px;
 }
