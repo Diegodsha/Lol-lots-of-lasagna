@@ -1,6 +1,8 @@
 import lasagna1 from './assets/spinach-lasagna.jpg';
 import lasagna2 from './assets/Best-Ever-Vegetarian-Lasagna.jpg';
 import lasagna3 from './assets/Classic-Meat-Lasagna-4.jpg';
+import lasagna4 from './assets/Pomodoro-pasta.jpg';
+import puttanesca from './assets/spaghetti-puttanesca.jpg';
 
 function createMenuPage() {
   const body1 = document.querySelector('body');
@@ -46,8 +48,8 @@ function createMenuPage() {
   carouselInner.appendChild(carouselItemActive);
 
   const myIcon = new Image();
-  myIcon.src = lasagna1;
-  myIcon.alt = 'mmmm';
+  myIcon.src = lasagna4;
+  myIcon.alt = 'lasagna4';
   myIcon.classList.add('d-block', 'w-100');
   carouselItemActive.appendChild(myIcon);
 
@@ -58,7 +60,7 @@ function createMenuPage() {
 
   const myIcon2 = new Image();
   myIcon2.src = lasagna2;
-  myIcon2.alt = 'mmmm2222';
+  myIcon2.alt = 'lasagna2';
   myIcon2.classList.add('d-block', 'w-100');
   carouselItem2.appendChild(myIcon2);
 
@@ -69,7 +71,7 @@ function createMenuPage() {
 
   const myIcon3 = new Image();
   myIcon3.src = lasagna3;
-  myIcon3.alt = 'mmmm333';
+  myIcon3.alt = 'lasagna3';
   myIcon3.classList.add('d-block', 'w-100');
   carouselItem3.appendChild(myIcon3);
 
@@ -121,7 +123,115 @@ function createMenuPage() {
     dishes will give you a explosion of several and unique flavors in your mouth (be careful it could be adictive).`;
   menuCont.appendChild(pTagWelcome);
 
-  //menu
+  //menu container
+  const menuCardsCont = div.cloneNode(true);
+  menuCardsCont.classList.add(
+    'home-cont',
+    'p-3',
+    'text-center',
+    'mt-5',
+    'row',
+    'justify-content-center'
+  );
+  sectionDiv.appendChild(menuCardsCont);
+
+  //menu cards
+  const card1Col = div.cloneNode(true);
+  card1Col.classList.add('col-12', 'col-lg-5');
+
+  //card1
+  const card1 = div.cloneNode(true);
+  card1.classList.add('card');
+  card1Col.appendChild(card1);
+  //   card1.setAttribute('style', 'width: 18rem;');
+
+  const card1IMg = new Image();
+  card1IMg.src = lasagna4;
+  card1IMg.classList.add('card-img-top');
+  card1.appendChild(card1IMg);
+
+  const card1Body = div.cloneNode(true);
+  card1Body.classList.add('card-body');
+  card1.appendChild(card1Body);
+
+  const card1Text = pTag.cloneNode(true);
+  card1Text.classList.add('card-text');
+  card1Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card1Body.appendChild(card1Text);
+  menuCardsCont.appendChild(card1Col);
+
+  //card2
+  const card2Col = div.cloneNode(true);
+  card2Col.classList.add('col-12', 'col-lg-5', 'mt-4', 'mt-lg-0');
+
+  const card2 = div.cloneNode(true);
+  card2.classList.add('card');
+  card2Col.appendChild(card2);
+  //   card2.setAttribute('style', 'width: 18rem;');
+
+  const card2IMg = new Image();
+  card2IMg.src = puttanesca;
+  card2IMg.classList.add('card-img-top');
+  card2.appendChild(card2IMg);
+
+  const card2Body = div.cloneNode(true);
+  card2Body.classList.add('card-body');
+  card2.appendChild(card2Body);
+
+  const card2Text = pTag.cloneNode(true);
+  card2Text.classList.add('card-text');
+  card2Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card2Body.appendChild(card2Text);
+  menuCardsCont.appendChild(card2Col);
+
+  //card3
+  const card3Col = div.cloneNode(true);
+  card3Col.classList.add('col-12', 'col-lg-5', 'mt-4');
+
+  const card3 = div.cloneNode(true);
+  card3.classList.add('card');
+  card3Col.appendChild(card3);
+  //   card3.setAttribute('style', 'width: 18rem;');
+
+  const card3IMg = new Image();
+  card3IMg.src = lasagna1;
+  card3IMg.classList.add('card-img-top');
+  card3.appendChild(card3IMg);
+
+  const card3Body = div.cloneNode(true);
+  card3Body.classList.add('card-body');
+  card3.appendChild(card3Body);
+
+  const card3Text = pTag.cloneNode(true);
+  card3Text.classList.add('card-text');
+  card3Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card3Body.appendChild(card3Text);
+  menuCardsCont.appendChild(card3Col);
+  //card4
+  const card4Col = div.cloneNode(true);
+  card4Col.classList.add('col-12', 'col-lg-5', 'mt-4');
+
+  const card4 = div.cloneNode(true);
+  card4.classList.add('card');
+  card4Col.appendChild(card4);
+  //   card4.setAttribute('style', 'width: 18rem;');
+
+  const card4IMg = new Image();
+  card4IMg.src = lasagna2;
+  card4IMg.classList.add('card-img-top');
+  card4.appendChild(card4IMg);
+
+  const card4Body = div.cloneNode(true);
+  card4Body.classList.add('card-body');
+  card4.appendChild(card4Body);
+
+  const card4Text = pTag.cloneNode(true);
+  card4Text.classList.add('card-text');
+  card4Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card4Body.appendChild(card4Text);
+  menuCardsCont.appendChild(card4Col);
+  //card5
+  //card6
 
   //appends footer
   const footer = document.querySelector('footer');
