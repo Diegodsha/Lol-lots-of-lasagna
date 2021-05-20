@@ -1,3 +1,4 @@
+@import 'bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,200&display=swap');
 
@@ -45,9 +46,11 @@ nav {
   }
 }
 .select-tab {
-  color: white;
   border-radius: 0.5rem;
   background-color: rgba(239, 168, 37, 0.948);
+  &:hover {
+    box-shadow: 2px 2px 5px black;
+  }
 }
 
 .lol {
@@ -61,10 +64,25 @@ nav {
 
 .home-cont {
   @extend.lasagna;
-  // height: 75vh;
-  // width: 90vh;
   background-color: rgba(255, 255, 255, 0.86);
   border-radius: 1rem;
+  box-shadow: 1px 3px 6px black;
+}
+
+.hours {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  width: 40%;
+  box-shadow: 1px 3px 6px black;
+  color: #525252;
+  display: flex;
+  justify-content: center;
+  ul {
+    width: max-content;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .foot-cont {

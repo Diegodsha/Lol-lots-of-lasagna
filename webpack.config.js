@@ -30,9 +30,9 @@ module.exports = {
     ],
   },
   devtool: 'inline-source-map',
-  devServer: {
-    port: 5000,
-  },
+  // devServer: {
+  //   port: 5000,
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
