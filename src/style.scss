@@ -2,7 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,200&display=swap');
 
-body {
+.body1 {
+  background-image: url('./assets/backlasagna.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body2 {
+  background-image: url('./assets/backlasagna2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body3 {
   background-image: url('./assets/backlasagna.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +36,7 @@ nav {
   @extend.lasagna;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
+  box-shadow: 2px 2px 5px black;
   .fa-heart {
     color: #ff0000;
     animation-name: rainbow-heart;
@@ -93,6 +107,9 @@ nav {
   height: 3rem;
 }
 
-hr {
-  height: 3px;
+.carousel-item {
+  img {
+    max-height: 759px;
+    border-radius: 1rem;
+  }
 }

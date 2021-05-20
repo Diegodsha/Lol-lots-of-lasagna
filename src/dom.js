@@ -3,6 +3,12 @@
 import { createFooter } from './footer';
 
 function createHomePage() {
+  const body1 = document.querySelector('body');
+  //change body background img
+  body1.classList.remove('body3');
+  body1.classList.remove('body2');
+  body1.classList.add('body1');
+
   const content = document.getElementById('content');
   const pTag = document.createElement('p');
   const div = document.createElement('div');
