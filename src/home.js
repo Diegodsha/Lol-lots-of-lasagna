@@ -60,11 +60,7 @@ function createHomePage() {
 
   // welcome text
   const welcomeText = pTag.cloneNode(true);
-  welcomeText.textContent = `Here you'll find an incredible variety of lasagnas and pastas to
-taste (Yes, we know the name is Lots of Lasagna but we couldn't
-resist to cook other types of delicious pasta ok?) we're sure that
-you're going to love them all and that you'll never find a better
-place to eat lasagna and pasta.`;
+  welcomeText.textContent = 'Here you\'ll find an incredible variety of lasagnas and pasta to taste (Yes, we know the name is Lots of Lasagna but we couldn\'t resist cooking other types of delicious pasta ok?) we\'re sure that you\'re going to love them all and that you\'ll never find a better place to eat lasagna and pasta.';
   homeCont.appendChild(welcomeText);
 
   // Schedule section
@@ -86,7 +82,7 @@ place to eat lasagna and pasta.`;
   schedule.appendChild(document.createElement('hr'));
 
   const scheduleText = pTag.cloneNode(true);
-  scheduleText.textContent = `Check our schedule so you don't miss the oportunity of tasting the
+  scheduleText.textContent = `Check our schedule so you don't miss the opportunity of tasting the
 best lasagna (and pasta of course) in the world.`;
   schedule.appendChild(scheduleText);
 

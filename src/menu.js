@@ -119,8 +119,7 @@ function createMenuPage() {
   sectionDiv.appendChild(menuCont);
 
   const pTagWelcome = pTag.cloneNode(true);
-  pTagWelcome.textContent = `Cooked by our italian chef Alessandro Pastolini, these variety of
-    dishes will give you a explosion of several and unique flavors in your mouth (be careful it could be adictive).`;
+  pTagWelcome.textContent = 'Cooked by our Italian chef Alessandro Pastolini, this variety of dishes will give you an explosion of several and unique flavors in your mouth (be careful it could be addictive).';
   menuCont.appendChild(pTagWelcome);
 
   // menu container
@@ -178,7 +177,7 @@ function createMenuPage() {
 
   const card2Text = pTag.cloneNode(true);
   card2Text.classList.add('card-text');
-  card2Text.textContent = 'Great puttansce pasta with olive oil, olives, capers, and garlic.';
+  card2Text.textContent = 'Great puttanesca pasta with olive oil, olives, capers, and garlic.';
   card2Body.appendChild(card2Text);
   menuCardsCont.appendChild(card2Col);
 
