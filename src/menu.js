@@ -137,13 +137,12 @@ function createMenuPage() {
 
   //menu cards
   const card1Col = div.cloneNode(true);
-  card1Col.classList.add('col-12', 'col-lg-5');
+  card1Col.classList.add('col-12', 'col-lg-5', 'mt-4');
 
   //card1
   const card1 = div.cloneNode(true);
   card1.classList.add('card');
   card1Col.appendChild(card1);
-  //   card1.setAttribute('style', 'width: 18rem;');
 
   const card1IMg = new Image();
   card1IMg.src = lasagna4;
@@ -162,12 +161,11 @@ function createMenuPage() {
 
   //card2
   const card2Col = div.cloneNode(true);
-  card2Col.classList.add('col-12', 'col-lg-5', 'mt-4', 'mt-lg-0');
+  card2Col.classList.add('col-12', 'col-lg-5', 'mt-5', 'mt-lg-4');
 
   const card2 = div.cloneNode(true);
   card2.classList.add('card');
   card2Col.appendChild(card2);
-  //   card2.setAttribute('style', 'width: 18rem;');
 
   const card2IMg = new Image();
   card2IMg.src = puttanesca;
@@ -186,12 +184,11 @@ function createMenuPage() {
 
   //card3
   const card3Col = div.cloneNode(true);
-  card3Col.classList.add('col-12', 'col-lg-5', 'mt-4');
+  card3Col.classList.add('col-12', 'col-lg-5', 'mt-5', 'mb-0', 'mb-lg-4');
 
   const card3 = div.cloneNode(true);
   card3.classList.add('card');
   card3Col.appendChild(card3);
-  //   card3.setAttribute('style', 'width: 18rem;');
 
   const card3IMg = new Image();
   card3IMg.src = lasagna1;
@@ -209,12 +206,11 @@ function createMenuPage() {
   menuCardsCont.appendChild(card3Col);
   //card4
   const card4Col = div.cloneNode(true);
-  card4Col.classList.add('col-12', 'col-lg-5', 'mt-4');
+  card4Col.classList.add('col-12', 'col-lg-5', 'mt-5', 'mb-4');
 
   const card4 = div.cloneNode(true);
   card4.classList.add('card');
   card4Col.appendChild(card4);
-  //   card4.setAttribute('style', 'width: 18rem;');
 
   const card4IMg = new Image();
   card4IMg.src = lasagna2;

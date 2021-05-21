@@ -61,7 +61,7 @@ nav {
 }
 .select-tab {
   border-radius: 0.5rem;
-  background-color: rgba(239, 168, 37, 0.948);
+  background-color: rgba(239, 168, 37);
   &:hover {
     box-shadow: 2px 2px 5px black;
   }
@@ -81,27 +81,34 @@ nav {
   background-color: rgba(255, 255, 255, 0.86);
   border-radius: 1rem;
   box-shadow: 1px 3px 6px black;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 .hours {
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
-  width: 40%;
   box-shadow: 1px 3px 6px black;
   color: #525252;
   display: flex;
   justify-content: center;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
   ul {
     width: max-content;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    list-style: none;
+    padding-left: 0;
   }
 }
 
 .foot-cont {
   @extend.lasagna;
-  background-color: rgba(239, 168, 37, 0.948);
+  background-color: rgba(239, 168, 37);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   height: 3rem;
@@ -116,6 +123,10 @@ nav {
 
 .card {
   box-shadow: 2px 2px 5px black;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
   img {
     height: 450px;
   }
