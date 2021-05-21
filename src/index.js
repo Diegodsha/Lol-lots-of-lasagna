@@ -1,7 +1,9 @@
+'use strict';
 import 'bootstrap';
 import './style.scss';
-import { createHomePage } from './dom';
+import { createHomePage } from './home';
 import { createMenuPage } from './menu';
+import { createContactPage } from './contact';
 
 //Removes selected tab color and cleans main content
 function clean() {
@@ -32,4 +34,11 @@ const menuTab = document.querySelector('.menu');
 menuTab.onclick = () => {
   clean();
   createMenuPage();
+};
+
+//Loads contact content
+const contactTab = document.querySelector('.contact');
+contactTab.onclick = () => {
+  clean();
+  createContactPage();
 };

@@ -1,3 +1,4 @@
+'use strict';
 function createFooter() {
   const footerDiv = document.createElement('footer');
   footerDiv.id = 'footer';

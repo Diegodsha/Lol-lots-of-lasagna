@@ -1,3 +1,4 @@
+'use strict';
 import lasagna1 from './assets/spinach-lasagna.jpg';
 import lasagna2 from './assets/Best-Ever-Vegetarian-Lasagna.jpg';
 import lasagna3 from './assets/Classic-Meat-Lasagna-4.jpg';
