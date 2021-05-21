@@ -35,7 +35,7 @@ function createMenuPage() {
   const carousel = div.cloneNode(true);
   carousel.setAttribute('id', 'carouselExample');
   carousel.setAttribute('data-bs-ride', 'carousel');
-  carousel.classList.add('carousel', 'slide');
+  carousel.classList.add('carousel', 'slide', 'carousel-dark');
   //   sectionDiv.appendChild(carousel);
 
   const carouselInner = div.cloneNode(true);
