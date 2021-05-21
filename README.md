@@ -31,7 +31,7 @@ Restaurant page built with javascript and webpack
 
 ## Live Demo
 
-<!-- Visit the [My library](https://diegodsha.github.io/My-library/) -->
+Visit [LOL](https://diegodsha.github.io/Lol-lots-of-lasagna)
 
 ## Prerequisites
 - Internet browser compatible with HTML5, CSS3 and Javascript ES6
