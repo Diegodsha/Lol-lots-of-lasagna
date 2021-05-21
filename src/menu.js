@@ -2,7 +2,7 @@
 import lasagna1 from './assets/spinach-lasagna.jpg';
 import lasagna2 from './assets/Best-Ever-Vegetarian-Lasagna.jpg';
 import lasagna3 from './assets/Classic-Meat-Lasagna-4.jpg';
-import lasagna4 from './assets/Pomodoro-pasta.jpg';
+import pomodoro from './assets/Pomodoro-pasta.jpg';
 import puttanesca from './assets/spaghetti-puttanesca.jpg';
 
 function createMenuPage() {
@@ -49,7 +49,7 @@ function createMenuPage() {
   carouselInner.appendChild(carouselItemActive);
 
   const myIcon = new Image();
-  myIcon.src = lasagna4;
+  myIcon.src = pomodoro;
   myIcon.alt = 'lasagna4';
   myIcon.classList.add('d-block', 'w-100');
   carouselItemActive.appendChild(myIcon);
@@ -146,7 +146,7 @@ function createMenuPage() {
   card1Col.appendChild(card1);
 
   const card1IMg = new Image();
-  card1IMg.src = lasagna4;
+  card1IMg.src = pomodoro;
   card1IMg.classList.add('card-img-top');
   card1.appendChild(card1IMg);
 
@@ -156,7 +156,8 @@ function createMenuPage() {
 
   const card1Text = pTag.cloneNode(true);
   card1Text.classList.add('card-text');
-  card1Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card1Text.textContent =
+    'Exquisite pomodoro pasta with olive oil, fresh tomatoes and basil.';
   card1Body.appendChild(card1Text);
   menuCardsCont.appendChild(card1Col);
 
@@ -179,7 +180,8 @@ function createMenuPage() {
 
   const card2Text = pTag.cloneNode(true);
   card2Text.classList.add('card-text');
-  card2Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card2Text.textContent =
+    'Great puttansce pasta with olive oil, olives, capers, and garlic.';
   card2Body.appendChild(card2Text);
   menuCardsCont.appendChild(card2Col);
 
@@ -202,7 +204,7 @@ function createMenuPage() {
 
   const card3Text = pTag.cloneNode(true);
   card3Text.classList.add('card-text');
-  card3Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card3Text.textContent = 'Unique spinach lasagna with lots of spinach.';
   card3Body.appendChild(card3Text);
   menuCardsCont.appendChild(card3Col);
   //card4
@@ -224,14 +226,13 @@ function createMenuPage() {
 
   const card4Text = pTag.cloneNode(true);
   card4Text.classList.add('card-text');
-  card4Text.textContent = 'Delicious vegetarian lasagna with organic pasta';
+  card4Text.textContent = 'Delicious vegetarian lasagna with organic pasta.';
   card4Body.appendChild(card4Text);
   menuCardsCont.appendChild(card4Col);
-  //card5
-  //card6
 
   //appends footer
   const footer = document.querySelector('footer');
+  footer.classList.remove('fixed-bottom');
   content.appendChild(footer);
 }
 

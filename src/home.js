@@ -117,6 +117,7 @@ best lasagna (and pasta of course) in the world.`;
     content.appendChild(createFooter());
   } else {
     const footerDiv = document.querySelector('footer');
+    footerDiv.classList.remove('fixed-bottom');
     content.appendChild(footerDiv);
   }
 }
