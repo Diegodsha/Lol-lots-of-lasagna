@@ -131,7 +131,7 @@ function createMenuPage() {
     'text-center',
     'mt-5',
     'row',
-    'justify-content-center'
+    'justify-content-center',
   );
   sectionDiv.appendChild(menuCardsCont);
 
@@ -155,8 +155,7 @@ function createMenuPage() {
 
   const card1Text = pTag.cloneNode(true);
   card1Text.classList.add('card-text');
-  card1Text.textContent =
-    'Exquisite pomodoro pasta with olive oil, fresh tomatoes and basil.';
+  card1Text.textContent = 'Exquisite pomodoro pasta with olive oil, fresh tomatoes and basil.';
   card1Body.appendChild(card1Text);
   menuCardsCont.appendChild(card1Col);
 
@@ -179,8 +178,7 @@ function createMenuPage() {
 
   const card2Text = pTag.cloneNode(true);
   card2Text.classList.add('card-text');
-  card2Text.textContent =
-    'Great puttansce pasta with olive oil, olives, capers, and garlic.';
+  card2Text.textContent = 'Great puttansce pasta with olive oil, olives, capers, and garlic.';
   card2Body.appendChild(card2Text);
   menuCardsCont.appendChild(card2Col);
 

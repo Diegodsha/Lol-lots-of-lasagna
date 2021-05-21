@@ -32,8 +32,7 @@ function createContactPage() {
   mainDiv.appendChild(contactCont);
 
   const pTagGetInTouch = pTag.cloneNode(true);
-  pTagGetInTouch.textContent =
-    'Get in touch with us or book a reservation to save your place';
+  pTagGetInTouch.textContent = 'Get in touch with us or book a reservation to save your place';
   contactCont.appendChild(pTagGetInTouch);
 
   // contact info

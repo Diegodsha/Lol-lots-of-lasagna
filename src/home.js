@@ -75,7 +75,7 @@ place to eat lasagna and pasta.`;
     'text-center',
     'mt-4',
     'd-flex',
-    'flex-column'
+    'flex-column',
   );
   sectionDiv.appendChild(schedule);
 
