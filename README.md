@@ -4,14 +4,14 @@
 Restaurant page built with javascript and webpack
 
 <p align="center">
-  <a href="https://github.com/Diegodsha/My-library/issues">
-  <img src="https://img.shields.io/github/issues-raw/Diegodsha/My-library?style=for-the-badge"
+  <a href="https://github.com/Diegodsha/Lol-lots-of-lasagna/issues">
+  <img src="https://img.shields.io/github/issues-raw/Diegodsha/Lol-lots-of-lasagna?style=for-the-badge"
        alt="Issues"></a>
-   <a href="https://github.com/Diegodsha/My-library/pulls">
-  <img src="https://img.shields.io/github/issues-pr/Diegodsha/My-library?style=for-the-badge"
+   <a href="https://github.com/Diegodsha/Lol-lots-of-lasagna/pulls">
+  <img src="https://img.shields.io/github/issues-pr/Diegodsha/Lol-lots-of-lasagna?style=for-the-badge"
        alt="Pull Requests"></a>
-   <a href="https://github.com/Diegodsha/My-library/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/Diegodsha/My-library?style=for-the-badge"
+   <a href="https://github.com/Diegodsha/Lol-lots-of-lasagna/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/Diegodsha/Lol-lots-of-lasagna?style=for-the-badge"
        alt="License"></a>
 </p>
 
