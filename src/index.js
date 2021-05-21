@@ -1,17 +1,17 @@
-'use strict';
 import 'bootstrap';
 import './style.scss';
-import { createHomePage } from './home';
-import { createMenuPage } from './menu';
-import { createContactPage } from './contact';
+import createHomePage from './home';
+import createMenuPage from './menu';
+import createContactPage from './contact';
 
-//Removes selected tab color and cleans main content
+// Removes selected tab color and cleans main content
 function clean() {
   const navlinks = document.getElementsByClassName('nav-link');
 
   for (let i = 0; i < navlinks.length; i += 1) {
-    if (navlinks[i].classList.contains('select-tab'))
+    if (navlinks[i].classList.contains('select-tab')) {
       navlinks[i].classList.remove('select-tab');
+    }
   }
 
   const contentDiv = document.getElementById('content');
@@ -19,24 +19,24 @@ function clean() {
   contentDiv.removeChild(mainDiv);
 }
 
-//Loads inital home content
+// Loads inital home content
 createHomePage();
 
-//Loads home content
+// Loads home content
 const homeTab = document.querySelector('.home');
 homeTab.onclick = () => {
   clean();
   createHomePage();
 };
 
-//Loads menu content
+// Loads menu content
 const menuTab = document.querySelector('.menu');
 menuTab.onclick = () => {
   clean();
   createMenuPage();
 };
 
-//Loads contact content
+// Loads contact content
 const contactTab = document.querySelector('.contact');
 contactTab.onclick = () => {
   clean();

@@ -1,4 +1,3 @@
-'use strict';
 function createFooter() {
   const footerDiv = document.createElement('footer');
   footerDiv.id = 'footer';
@@ -25,4 +24,4 @@ function createFooter() {
   return footerDiv;
 }
 
-export { createFooter };
+export default createFooter;

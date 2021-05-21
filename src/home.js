@@ -1,10 +1,8 @@
-'use strict';
-
-import { createFooter } from './footer';
+import createFooter from './footer';
 
 function createHomePage() {
   const body1 = document.querySelector('body');
-  //change body background img
+  // change body background img
   body1.classList.remove('body3');
   body1.classList.remove('body2');
   body1.classList.add('body1');
@@ -40,13 +38,13 @@ function createHomePage() {
   const mainDiv = document.createElement('main');
   mainDiv.classList.add('d-flex', 'flex-column', 'align-items-center');
   content.appendChild(mainDiv);
-  //restaurant name
+  // restaurant name
   const restName = document.createElement('h1');
   restName.textContent = 'Lots of Lasagna';
   restName.classList.add('lobster', 'text-white', 'py-4', 'lol');
   mainDiv.appendChild(restName);
 
-  //welcome section
+  // welcome section
   const sectionDiv = document.createElement('section');
   sectionDiv.setAttribute('id', 'home');
   mainDiv.appendChild(sectionDiv);
@@ -60,7 +58,7 @@ function createHomePage() {
   pTagWelcome.textContent = 'Welcome to the house of lasagna';
   homeCont.appendChild(pTagWelcome);
 
-  //welcome text
+  // welcome text
   const welcomeText = pTag.cloneNode(true);
   welcomeText.textContent = `Here you'll find an incredible variety of lasagnas and pastas to
 taste (Yes, we know the name is Lots of Lasagna but we couldn't
@@ -69,7 +67,7 @@ you're going to love them all and that you'll never find a better
 place to eat lasagna and pasta.`;
   homeCont.appendChild(welcomeText);
 
-  //Schedule section
+  // Schedule section
   const schedule = div.cloneNode(true);
   schedule.classList.add(
     'home-cont',
@@ -99,7 +97,7 @@ best lasagna (and pasta of course) in the world.`;
   // creates list for opening hours
   createList(openHours, ul, hours);
 
-  //Location
+  // Location
   const locationDiv = div.cloneNode(true);
   locationDiv.classList.add('home-cont', 'p-3', 'text-center', 'mt-4');
   sectionDiv.appendChild(locationDiv);
@@ -122,4 +120,4 @@ best lasagna (and pasta of course) in the world.`;
   }
 }
 
-export { createHomePage };
+export default createHomePage;
