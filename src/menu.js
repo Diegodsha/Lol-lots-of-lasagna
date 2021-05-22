@@ -4,7 +4,7 @@ import lasagna3 from './assets/Classic-Meat-Lasagna-4.jpg';
 import pomodoro from './assets/Pomodoro-pasta.jpg';
 import puttanesca from './assets/spaghetti-puttanesca.jpg';
 
-function createMenuPage() {
+const createMenuPage = () => {
   const body1 = document.querySelector('body');
   // change body background img
   body1.classList.remove('body1');
@@ -230,6 +230,6 @@ function createMenuPage() {
   const footer = document.querySelector('footer');
   footer.classList.remove('fixed-bottom');
   content.appendChild(footer);
-}
+};
 
 export default createMenuPage;

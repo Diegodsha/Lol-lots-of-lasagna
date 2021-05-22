@@ -5,7 +5,7 @@ import createMenuPage from './menu';
 import createContactPage from './contact';
 
 // Removes selected tab color and cleans main content
-function clean() {
+const clean = () => {
   const navlinks = document.getElementsByClassName('nav-link');
 
   for (let i = 0; i < navlinks.length; i += 1) {
@@ -17,7 +17,7 @@ function clean() {
   const contentDiv = document.getElementById('content');
   const mainDiv = document.querySelector('main');
   contentDiv.removeChild(mainDiv);
-}
+};
 
 // Loads inital home content
 createHomePage();

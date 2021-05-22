@@ -1,4 +1,4 @@
-function createFooter() {
+const createFooter = () => {
   const footerDiv = document.createElement('footer');
   footerDiv.id = 'footer';
   footerDiv.classList.add('foot-cont', 'p-3', 'mt-4', 'row');
@@ -22,6 +22,6 @@ function createFooter() {
   span.appendChild(anchorName);
 
   return footerDiv;
-}
+};
 
 export default createFooter;

@@ -1,6 +1,6 @@
 import createFooter from './footer';
 
-function createHomePage() {
+const createHomePage = () => {
   const body1 = document.querySelector('body');
   // change body background img
   body1.classList.remove('body3');
@@ -114,6 +114,6 @@ best lasagna (and pasta of course) in the world.`;
     footerDiv.classList.remove('fixed-bottom');
     content.appendChild(footerDiv);
   }
-}
+};
 
 export default createHomePage;

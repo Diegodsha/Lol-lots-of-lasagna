@@ -1,4 +1,4 @@
-function createContactPage() {
+const createContactPage = () => {
   const body1 = document.querySelector('body');
   // change body background img
   body1.classList.remove('body1');
@@ -53,6 +53,6 @@ function createContactPage() {
   const footer = document.querySelector('footer');
   footer.classList.add('fixed-bottom');
   content.appendChild(footer);
-}
+};
 
 export default createContactPage;
