@@ -23,16 +23,9 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      // {
-      //   test: /\.(jpe?g|png)$/i,
-      //   use: ['file-loader', 'webp-loader'],
-      // },
     ],
   },
   devtool: 'inline-source-map',
-  // devServer: {
-  //   port: 5000,
-  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',

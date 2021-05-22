@@ -6,7 +6,6 @@ import puttanesca from './assets/spaghetti-puttanesca.jpg';
 
 const createMenuPage = () => {
   const body1 = document.querySelector('body');
-  // change body background img
   body1.classList.remove('body1');
   body1.classList.remove('body3');
   body1.classList.add('body2');
@@ -21,7 +20,6 @@ const createMenuPage = () => {
   mainDiv.classList.add('d-flex', 'flex-column', 'align-items-center');
   content.appendChild(mainDiv);
 
-  // Page title
   const pageTitle = document.createElement('h1');
   pageTitle.textContent = 'Menu';
   pageTitle.classList.add('lobster', 'text-white', 'py-4', 'lol');
@@ -31,18 +29,15 @@ const createMenuPage = () => {
   sectionDiv.setAttribute('id', 'home');
   mainDiv.appendChild(sectionDiv);
 
-  // carousel
   const carousel = div.cloneNode(true);
   carousel.setAttribute('id', 'carouselExample');
   carousel.setAttribute('data-bs-ride', 'carousel');
   carousel.classList.add('carousel', 'slide', 'carousel-dark');
-  //   sectionDiv.appendChild(carousel);
 
   const carouselInner = div.cloneNode(true);
   carouselInner.classList.add('carousel-inner');
   carousel.appendChild(carouselInner);
 
-  // item 1
   const carouselItemActive = div.cloneNode(true);
   carouselItemActive.classList.add('carousel-item', 'active');
   carouselInner.appendChild(carouselItemActive);
@@ -53,7 +48,6 @@ const createMenuPage = () => {
   myIcon.classList.add('d-block', 'w-100');
   carouselItemActive.appendChild(myIcon);
 
-  // item 2
   const carouselItem2 = div.cloneNode(true);
   carouselItem2.classList.add('carousel-item');
   carouselInner.appendChild(carouselItem2);
@@ -64,7 +58,6 @@ const createMenuPage = () => {
   myIcon2.classList.add('d-block', 'w-100');
   carouselItem2.appendChild(myIcon2);
 
-  // item 3
   const carouselItem3 = div.cloneNode(true);
   carouselItem3.classList.add('carousel-item');
   carouselInner.appendChild(carouselItem3);
@@ -75,7 +68,6 @@ const createMenuPage = () => {
   myIcon3.classList.add('d-block', 'w-100');
   carouselItem3.appendChild(myIcon3);
 
-  // Prev btn
   const prevBtn = document.createElement('button');
   prevBtn.classList.add('carousel-control-prev');
   prevBtn.type = 'button';
@@ -92,7 +84,6 @@ const createMenuPage = () => {
   carSpanPrev.appendChild(spanVisPrev);
   prevBtn.appendChild(carSpanPrev);
 
-  // next btn
   const nextBtn = document.createElement('button');
   nextBtn.classList.add('carousel-control-next');
   nextBtn.type = 'button';
@@ -113,7 +104,6 @@ const createMenuPage = () => {
   carousel.appendChild(nextBtn);
   sectionDiv.appendChild(carousel);
 
-  // menu intro
   const menuCont = div.cloneNode(true);
   menuCont.classList.add('home-cont', 'p-3', 'text-center', 'mt-5');
   sectionDiv.appendChild(menuCont);
@@ -122,7 +112,6 @@ const createMenuPage = () => {
   pTagWelcome.textContent = 'Cooked by our Italian chef Alessandro Pastolini, this variety of dishes will give you an explosion of several and unique flavors in your mouth (be careful it could be addictive).';
   menuCont.appendChild(pTagWelcome);
 
-  // menu container
   const menuCardsCont = div.cloneNode(true);
   menuCardsCont.classList.add(
     'home-cont',
@@ -134,11 +123,9 @@ const createMenuPage = () => {
   );
   sectionDiv.appendChild(menuCardsCont);
 
-  // menu cards
   const card1Col = div.cloneNode(true);
   card1Col.classList.add('col-12', 'col-lg-5', 'mt-4');
 
-  // card1
   const card1 = div.cloneNode(true);
   card1.classList.add('card');
   card1Col.appendChild(card1);
@@ -158,7 +145,6 @@ const createMenuPage = () => {
   card1Body.appendChild(card1Text);
   menuCardsCont.appendChild(card1Col);
 
-  // card2
   const card2Col = div.cloneNode(true);
   card2Col.classList.add('col-12', 'col-lg-5', 'mt-5', 'mt-lg-4');
 
@@ -181,7 +167,6 @@ const createMenuPage = () => {
   card2Body.appendChild(card2Text);
   menuCardsCont.appendChild(card2Col);
 
-  // card3
   const card3Col = div.cloneNode(true);
   card3Col.classList.add('col-12', 'col-lg-5', 'mt-5', 'mb-0', 'mb-lg-4');
 
@@ -203,7 +188,7 @@ const createMenuPage = () => {
   card3Text.textContent = 'Unique spinach lasagna with lots of spinach.';
   card3Body.appendChild(card3Text);
   menuCardsCont.appendChild(card3Col);
-  // card4
+
   const card4Col = div.cloneNode(true);
   card4Col.classList.add('col-12', 'col-lg-5', 'mt-5', 'mb-4');
 
@@ -226,7 +211,6 @@ const createMenuPage = () => {
   card4Body.appendChild(card4Text);
   menuCardsCont.appendChild(card4Col);
 
-  // appends footer
   const footer = document.querySelector('footer');
   footer.classList.remove('fixed-bottom');
   content.appendChild(footer);
