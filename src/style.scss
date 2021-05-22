@@ -1,0 +1,148 @@
+@import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,200&display=swap');
+
+.body1 {
+  background-image: url('./assets/backlasagna.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.body2 {
+  background-image: url('./assets/backlasagna2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.body3 {
+  background-image: url('./assets/fettuccine-alfredo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.lasagna {
+  font-family: 'Nunito', sans-serif;
+}
+
+.lobster {
+  font-family: 'Lobster', sans-serif;
+}
+
+nav {
+  @extend.lasagna;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 2px 2px 5px black;
+
+  .fa-heart {
+    color: #f00;
+    animation-name: rainbow-heart;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rainbow-heart {
+    0% {
+      color: rgb(224, 6, 6);
+    }
+
+    40% {
+      color: rgb(250, 178, 9);
+    }
+
+    70% {
+      color: rgb(66, 224, 8);
+    }
+
+    100% {
+      color: rgb(224, 6, 6);
+    }
+  }
+}
+
+.select-tab {
+  border-radius: 0.5rem;
+  background-color: rgba(239, 168, 37);
+
+  &:hover {
+    box-shadow: 2px 2px 5px black;
+  }
+}
+
+.lol {
+  font-size: 60px;
+  text-shadow: 4px 1px 3px black;
+}
+
+#home {
+  width: 80%;
+}
+
+.home-cont {
+  @extend.lasagna;
+
+  background-color: rgba(255, 255, 255, 0.86);
+  border-radius: 1rem;
+  box-shadow: 1px 3px 6px black;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.hours {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 1px 3px 6px black;
+  color: #525252;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  ul {
+    width: max-content;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.foot-cont {
+  @extend.lasagna;
+
+  background-color: rgba(239, 168, 37);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 3rem;
+}
+
+.carousel-item {
+  img {
+    max-height: 759px;
+    border-radius: 1rem;
+  }
+}
+
+.card {
+  box-shadow: 2px 2px 5px black;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    height: 450px;
+  }
+}
